@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		CE7B26BA2AC670BF00AFC340 /* Journal_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26B92AC670BF00AFC340 /* Journal_AppApp.swift */; };
-		CE7B26BC2AC670BF00AFC340 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26BB2AC670BF00AFC340 /* ContentView.swift */; };
+		CE7B26BC2AC670BF00AFC340 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26BB2AC670BF00AFC340 /* MainView.swift */; };
 		CE7B26BE2AC670C000AFC340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B26BD2AC670C000AFC340 /* Assets.xcassets */; };
 		CE7B26C12AC670C000AFC340 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7B26C02AC670C000AFC340 /* Preview Assets.xcassets */; };
+		CE7B26D02AC6733D00AFC340 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26CF2AC6733D00AFC340 /* SettingsView.swift */; };
+		CE7B26D22AC6755B00AFC340 /* NewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26D12AC6755B00AFC340 /* NewEntryView.swift */; };
+		CE7B26D62AC70EB800AFC340 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26D52AC70EB800AFC340 /* JournalView.swift */; };
+		CE7B26DB2AC73FF000AFC340 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26DA2AC73FF000AFC340 /* GalleryItem.swift */; };
+		CE7B26DD2AC74EAE00AFC340 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26DC2AC74EAE00AFC340 /* PhotoView.swift */; };
+		CE7B26DF2AC8A45400AFC340 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B26DE2AC8A45400AFC340 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE7B26B62AC670BF00AFC340 /* Journal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B26B92AC670BF00AFC340 /* Journal_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppApp.swift; sourceTree = "<group>"; };
-		CE7B26BB2AC670BF00AFC340 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE7B26BB2AC670BF00AFC340 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE7B26BD2AC670C000AFC340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7B26C02AC670C000AFC340 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE7B26CF2AC6733D00AFC340 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CE7B26D12AC6755B00AFC340 /* NewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryView.swift; sourceTree = "<group>"; };
+		CE7B26D52AC70EB800AFC340 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		CE7B26DA2AC73FF000AFC340 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
+		CE7B26DC2AC74EAE00AFC340 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		CE7B26DE2AC8A45400AFC340 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				CE7B26B92AC670BF00AFC340 /* Journal_AppApp.swift */,
-				CE7B26BB2AC670BF00AFC340 /* ContentView.swift */,
+				CE7B26C72AC671CA00AFC340 /* Views */,
+				CE7B26CC2AC6721000AFC340 /* ViewModel */,
+				CE7B26CB2AC6720000AFC340 /* Models */,
+				CE7B26D92AC73F3400AFC340 /* Services */,
+				CE7B26CA2AC671F100AFC340 /* Helpers */,
 				CE7B26BD2AC670C000AFC340 /* Assets.xcassets */,
 				CE7B26BF2AC670C000AFC340 /* Preview Content */,
 			);
@@ -65,6 +81,48 @@
 				CE7B26C02AC670C000AFC340 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE7B26C72AC671CA00AFC340 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B26BB2AC670BF00AFC340 /* MainView.swift */,
+				CE7B26D12AC6755B00AFC340 /* NewEntryView.swift */,
+				CE7B26CF2AC6733D00AFC340 /* SettingsView.swift */,
+				CE7B26D52AC70EB800AFC340 /* JournalView.swift */,
+				CE7B26DC2AC74EAE00AFC340 /* PhotoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE7B26CA2AC671F100AFC340 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE7B26CB2AC6720000AFC340 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B26DA2AC73FF000AFC340 /* GalleryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE7B26CC2AC6721000AFC340 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B26DE2AC8A45400AFC340 /* ContentModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE7B26D92AC73F3400AFC340 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7B26BC2AC670BF00AFC340 /* ContentView.swift in Sources */,
+				CE7B26D62AC70EB800AFC340 /* JournalView.swift in Sources */,
+				CE7B26DF2AC8A45400AFC340 /* ContentModel.swift in Sources */,
+				CE7B26D22AC6755B00AFC340 /* NewEntryView.swift in Sources */,
+				CE7B26DD2AC74EAE00AFC340 /* PhotoView.swift in Sources */,
+				CE7B26DB2AC73FF000AFC340 /* GalleryItem.swift in Sources */,
+				CE7B26BC2AC670BF00AFC340 /* MainView.swift in Sources */,
+				CE7B26D02AC6733D00AFC340 /* SettingsView.swift in Sources */,
 				CE7B26BA2AC670BF00AFC340 /* Journal_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
